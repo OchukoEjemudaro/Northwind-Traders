@@ -396,7 +396,7 @@ This measure was then utilized in conjunction with visualization tool, bar chart
 Understanding the interplay between unit sales and revenue for each product allows Northwind Traders to tailor strategies for optimal performance and sustained growth in the gourmet food market.
 
 **Worst Selling Product**
-![](Monthly_Sale.png)
+![](Bottom_5_products.png)
 
 - From this analysis, Genen Shouyu has revenue of $1163 with 75 units sold. This product may have limited market appeal or faces challenges in commanding higher prices. 
 - Longlife Tofu follows with revenue of $950 and 95 units sold. While unit sales are slightly higher than Genen Shouyu, the revenue remains low. Consider exploring opportunities to enhance the product's perceived value, such as through marketing campaigns emphasizing its unique qualities or versatility.
