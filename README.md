@@ -485,17 +485,17 @@ Best Selling Product
 
 The analysis of Northwind Traders' sales and order data provides valuable insights into various aspects of the business. Northwind Traders can capitalize on the insights gained from this analysis to enhance operational efficiency, boost sales, and improve overall customer satisfaction. Regular monitoring, strategic planning, and adaptability will be key to the sustained success of the business.
 
+Thank You For Reading
 
+You can interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiYTU2ZDIxNDEtNzk5Ni00NzlhLTgxZmMtM2E2MWM0YzY2ZjNkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
+---
 
+I’m interested in a Data Analyst role in a reputable organization where I can showcase my skills, take more responsibilities, continue to learn, an organization that I can grow with, where my work will be highly beneficial to the organization.
 
+You can get reach me on ochukoejemudaro@gmail.com
 
-
-
-
-
-
-
+THANK YOU
 
 
 
