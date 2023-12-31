@@ -88,10 +88,11 @@ In Power BI, connecting to a CSV file involves specifying the location of the CS
 
 Data profiling in Power BI helps to examining and analyzing the characteristics and quality of data to gain insights into its structure, patterns, potential issues, and identify outliers. It helps to make informed decision on data cleaning and transformation. Power BI provides several tools and features that helps to profile data effectively. These are column quality, column distribution and column profile.
 
-- **Data Profile on Key Column on Category Table**
+**Data Profile on Key Column on Category Table**
 ![](Category_Table.png)
 
 **1. Basic Information**
+
 - Table Name: Category Table
 - Number of Rows: Eight
 - Number of Key Columns: Two 
@@ -103,10 +104,27 @@ Data profiling in Power BI helps to examining and analyzing the characteristics 
 |Category ID|Whole Number|8|8|100|0|0|1|8|
 |Category Name|Text|8|8|100|0|0|Beverages|Seafood|
 
+**3. Data Quality Checks**
 
+**Missing Values:**
 
+- Category ID: 0
+- Category Name: 0
+- Duplicates: This table has no duplicate value
 
+**Data Profile on Key Column on Customer Table**
+![](Customer_Table.png)
 
+**1. Basic Information** 
+- Table Name: Customer Table
+- Number of Rows: Ninety-one
+- Number of Key Columns: Five
+
+**2. Column Profile**
+
+|Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
+|----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+|Customer ID|Text|91|91|100|0|0|ALFKI|WOLZA|
 
 
 
