@@ -164,8 +164,7 @@ Data profiling in Power BI helps to examining and analyzing the characteristics 
 - Duplicates: This table has no duplicate value
 
 **Data Profile on Key Column on Shippers Table**
-
-![](Shipped_Table.png)
+![](Shipper_Table.png)
 
 **1. Basic Information** 
 
