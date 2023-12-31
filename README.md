@@ -374,17 +374,17 @@ This measure was then utilized in conjunction with visualization tool, bar chart
 
 **Best Selling Product**
 
+![](Top_5_Ptroduts.png)
 
+- From this analysis, Côte de Blaye stands out as the top revenue generator despite a lower unit sales volume (305 units). This product commands a high price, contributing significantly to revenue. The lower unit sales suggest a higher value perception among customers.
+- Thüringer Rostbratwurst follows closely in revenue, with a higher unit sales volume (514 units). This product combines strong sales volume with a competitive price, indicating a popular and reasonably priced item among customers.
+- Raclette Courdavault ranks third in revenue with a substantial unit sales volume (879 units). This product achieves a balance between volume and price, indicating a solid market presence and customer appeal.
+- Camembert Pierrot is the fourth-highest revenue generator with a commendable unit sales volume (922 units). This product's revenue is driven by both unit sales and pricing, reflecting its popularity among customers.
+- Tarte au sucre secures the fifth-highest revenue, with a moderate unit sales volume (625 units). This product contributes to revenue with a balanced combination of unit sales and pricing. 
 
+Understanding the interplay between unit sales and revenue for each product allows Northwind Traders to tailor strategies for optimal performance and sustained growth in the gourmet food market.
 
-
-
-
-
-
-
-
-
+**Worst Selling Product**
 
 
 
