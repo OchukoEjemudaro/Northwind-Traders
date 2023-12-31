@@ -3,6 +3,16 @@ A Power BI project that involves examining sales and order data for Northwind Tr
 
 ## Table of Content
 - [Project Overview](https://github.com/OchukoEjemudaro/Northwind-Traders#northwind-traders-sales-analysis)
+- [Project Scope](https://github.com/OchukoEjemudaro/Northwind-Traders#project-scope)
+- [Business Objective](https://github.com/OchukoEjemudaro/Northwind-Traders#business-objective)
+- [Document Purpose](https://github.com/OchukoEjemudaro/Northwind-Traders#document-purpose)
+- [skill Demostrated](https://github.com/OchukoEjemudaro/Northwind-Traders#skills-demostrated)
+- [Data Source](https://github.com/OchukoEjemudaro/Northwind-Traders#data-source)
+- [Data Connection Detail](https://github.com/OchukoEjemudaro/Northwind-Traders#data-connection-details)
+- [Data Profilling](https://github.com/OchukoEjemudaro/Northwind-Traders#data-profiling)
+- [Data Cleaning and Process](https://github.com/OchukoEjemudaro/Northwind-Traders#data-cleaning-and-processes)
+- [Data modelling](https://github.com/OchukoEjemudaro/Northwind-Traders#data-modelling)
+- [Data Analysis and Insight](https://github.com/OchukoEjemudaro/Northwind-Traders#data-analysis-and-insight)
 
 ## Project Overview
 This project aims to provide Northwind Traders, a fictitious gourmet food supplier with actionable insights, derived from the analysis of sales and order data using Power BI. By understanding historical sales trends, product performance, key customer relationships, and shipping cost consistency, the company can make informed decisions to optimize its business strategies, improve operational efficiency, and enhance overall performance in the gourmet food supply market. 
