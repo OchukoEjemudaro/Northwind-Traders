@@ -353,6 +353,35 @@ A comprehensive approach was taken to create a measure that calculate percentage
 
 %MOM measure was then utilized in conjunction with visualization tool, waterfall chart.
 
+![](Monthly_Sale.png)
+
+- From this analysis, July, September, October, December, January, February, March, and April exhibit positive revenue growth compared to the previous month with December and April leading in percentage increases.
+- August, November, May, and June show a decline in revenue compared to the previous month.
+
+**2. Which are the best and worst selling products?**
+
+Analyzing the sales and order data for Northwind Traders, it's essential to identify best and worst selling products based on a certain criterial. In this analysis, best and worst selling products are recognized base on there contribution to the revenue generated. 
+
+To identify the best and worst selling products in Power BI, a measure that calculate the revenue made on each product was created and then used bar chart to display the results. 
+
+A comprehensive approach was taken to create a measure that calculate total sales
+
+_DAX code for calculating Total Sales_
+
+```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
+
+This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 best selling product and worst 5 selling product by revenue.
+
+**Best Selling Product**
+
+
+
+
+
+
+
+
+
 
 
 
