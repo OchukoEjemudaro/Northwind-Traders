@@ -78,7 +78,7 @@ In Power BI, connecting to a CSV file involves specifying the location of the CS
 
 **1. Open Power BI Desktop**
 
-- Launched Power BI Desktop on computer
+- Launched Power BI Desktop on computer.
 ![](Open_Power_BI.png)
 
 **2. Get Data**
