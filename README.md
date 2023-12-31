@@ -289,7 +289,6 @@ The following process was carried out during data processes.
 - Added a new table
 
 Northwind Traders Food Supplier runs a fiscal year that starts on July 2013 and end 12 months later. Therefore, adding a calendar table is important in this analysis. A calendar table is a table with unique date value, often referred to as a date dimension or time table. 
-
 ![](Calendar_Table.png)
 
 This table was marked as date table. Marking a calendar table as a date table in Power BI enhance time-based calculations, navigation, and interactions within Power BI reports. When a calendar table is marked as date table, it’s like telling Power BI that the table contains date-related information, allowing the system to optimize certain functionalities such as Time Intelligence Functions. Marking a calendar table enables the use of time intelligence functions in DAX (Data Analysis Expressions). Functions like TOTALYTD, TOTALQTD, TOTALMTD, and others work more effectively when applied to a designated date table. These functions help with year-to-date, quarter-to-date, and month-to-date calculations.
@@ -326,7 +325,6 @@ _DAX code for calculating Total Sales_
 This measure was then utilized in conjunction with visualization tool, line chart.
 
 Line chart graphically represent and analyze the evolving patterns and fluctuations in sales data, thereby providing a clearer and more insightful understanding of the temporal dynamics within the dataset.
-
 ![](Sales_Trends.png)
 
 - From this analysis, there is a general increasing trend in revenue from July to March, indicating a positive sales trajectory and strong performance during this period. This trend suggests successful sales strategies, customer engagement, or market demand during these months.
@@ -352,7 +350,6 @@ A comprehensive approach was taken to create a measure that calculate percentage
 ```%MOM Sales = DIVIDE ([Total Sales] - [Previous Month sales], [Previous Month sales],0)```
 
 %MOM measure was then utilized in conjunction with visualization tool, waterfall chart.
-
 ![](Monthly_Sale.png)
 
 - From this analysis, July, September, October, December, January, February, March, and April exhibit positive revenue growth compared to the previous month with December and April leading in percentage increases.
@@ -373,7 +370,6 @@ _DAX code for calculating Total Sales_
 This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 best selling product and worst 5 selling product by revenue.
 
 **Best Selling Product**
-
 ![](Top_5_Ptroduts.png)
 
 - From this analysis, Côte de Blaye stands out as the top revenue generator despite a lower unit sales volume (305 units). This product commands a high price, contributing significantly to revenue. The lower unit sales suggest a higher value perception among customers.
@@ -385,16 +381,27 @@ This measure was then utilized in conjunction with visualization tool, bar chart
 Understanding the interplay between unit sales and revenue for each product allows Northwind Traders to tailor strategies for optimal performance and sustained growth in the gourmet food market.
 
 **Worst Selling Product**
+![](Monthly_Sale.png)
 
+- From this analysis, Genen Shouyu has revenue of $1163 with 75 units sold. This product may have limited market appeal or faces challenges in commanding higher prices. 
+- Longlife Tofu follows with revenue of $950 and 95 units sold. While unit sales are slightly higher than Genen Shouyu, the revenue remains low. Consider exploring opportunities to enhance the product's perceived value, such as through marketing campaigns emphasizing its unique qualities or versatility.
+ - Louisiana Hot Spiced Okra generated revenue of $935 with 55 units sold. The relatively low revenue and unit sales may suggest a niche market or limited demand. Assessing the market segment and potential adjustments to product positioning or marketing efforts could be considered.
+- Geitost has revenue of $760 with 304 units sold. Despite a higher unit sales volume, the revenue remains lower. Evaluate the pricing strategy and explore options to increase the perceived value of Geitost, potentially through promotions or product bundling.
+- Chocolade is among the bottom products with revenue of $485 and 38 units sold. The low revenue and unit sales may indicate challenges in positioning or marketing.
 
+**3. Can you identify any key customers?**
 
+key customers are customer who significantly contribute to the success and growth of the business. Analyzing the sales and order data for Northwind Traders, it's essential to identify key customers based on a certain criterial. In this analysis, key customers are recognized base on there contribution to the revenue generated. 
 
+To identify key customers by revenue generated in Power BI, a measure that calculate the total revenue made on each customer was created and then used bar chart to display the results. 
 
+A comprehensive approach was taken to create a measure that calculate total sales
 
+_DAX code for calculating Total Sales_
 
+```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
-
-
+This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 customers by revenue.
 
 
 
