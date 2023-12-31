@@ -36,7 +36,7 @@ Here are key stakeholders who could make use of this analysis and benefit from i
 
 **1. Operations Managers:**
 -	Use of Analysis: Operations managers can leverage insights to streamline order fulfillment processes, optimize inventory levels, and improve overall efficiency in day-to-day operations.
--	Benefits: Reduced operational costs, enhanced productivity, and improved order fulfillment times
+-	Benefits: Reduced operational costs, enhanced productivity, and improved order fulfillment times.
 
 **2. Marketing Team:**
 - Use of Analysis: The marketing team can benefit from insights into customer preferences, satisfaction levels, and overall market trends.
