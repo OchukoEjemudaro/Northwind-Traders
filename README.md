@@ -402,6 +402,56 @@ _DAX code for calculating Total Sales_
 ```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
 This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 customers by revenue.
+![](Top_5_Customers.png)
+
+- From this analysis, Save-A-Lot Markets emerges as the top key customer, generating $87,174 in revenue. Save-A-Lot Markets' substantial contribution to revenue indicates a strong and consistent business relationship.
+- Ernst Handel follows closely, contributing $75,488 in revenue. Ernst Handel's significant revenue suggests a robust partnership. 
+- Quick-Stop ranks third among key customers, with revenue totaling $72,041. Quick-Stop's substantial contribution positions them as a valuable customer.
+- Hungry Owl All-Night Grocers contributes $37,235 in revenue. While not as high as the top customers, Hungry Owl All-Night Grocers remains a key contributor. 
+- Hanari Carnes rounds out the top five key customers with $28,681 in revenue. Despite a lower revenue contribution, Hanari Carnes remains significant.
+
+Understanding and prioritizing key customers enables Northwind Traders to strategically cultivate relationships, enhance customer satisfaction, and drive sustainable revenue growth
+
+**4. Are shipping costs consistent across providers?**
+
+Analyzing the shipping costs across different providers is crucial to assess consistency and identify potential areas for optimization
+
+To identify if shipping cost are consistent in Power BI, a measure that calculate the total freight (The shipping cost for the order (USD)) for each provider was created and then used visualizations such as column chart to display the results. 
+
+A comprehensive approach was taken to create a measure that calculate total freight.
+
+_DAX code for calculating Total freight_
+
+```Total Shipping Cost = CALCULATE(SUM(Tbl_Order[Freight]), USERELATIONSHIP(Tbl_Order[Shipped Date], 'Calendar'[Date]),Tbl_Order[Shipped Date]<> BLANK())```
+
+USERELATIONSHIP function in this measure was used to switch an inactive relationship between the calendar table's date column and the Order table’s shipped date column to become active, and simultaneously convert the original active relationship to inactive. This change occurs within the scope of the specific measure, while the original relationship settings in the Power BI data model remain unchanged.
+
+The "Shipped Date" column in the Order table has some entries with null values. These null values represent orders that were placed but not yet shipped. As a result, these entries are intended to be excluded or filtered out from the analysis. Therefore, ```“Tbl_Order[Shipped Date]<> BLANK()”``` was use within this measure to filter the null values out from the analysis.
+
+This measure was then utilized in conjunction with visualization tool, column chart to display total shipping cost for each provider.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
