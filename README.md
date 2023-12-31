@@ -438,15 +438,52 @@ This measure was then utilized in conjunction with visualization tool, column ch
 From this analysis, there is a clear variation in shipping costs across providers, with United Package incurring the highest cost, followed by Federal Shipping and Speedy Express. The inconsistency in shipping costs suggests that each provider may have different pricing structures, service levels, or operational efficiencies affecting their charges.
 
 After the initial analysis, I took a closer look at how shipping costs change over time. This detailed exploration helped me understand the performance trends in shipping costs among different providers. It's like looking at a timeline to see patterns and changes in shipping expenses. This kind of analysis is valuable for spotting trends and behaviors in the data over a specific period.
+![](Shipping_Cost_Trend.png)
+
+- From this analysis, Federal Shipping shows variations, with higher costs in peak months like August, October and April. Understanding these seasonal trends can help in planning and optimizing logistics.
+- Speedy Express consistently demonstrates competitive shipping costs, making it a cost-efficient option for several months.
+- United Package shows varying costs, with significant spikes in months like February and April and its impact on overall shipping expenses should be carefully assessed. Consider negotiating terms or exploring alternative providers for potential cost savings.
+
+##Recommendation
+
+**1.	Sales Trends**
+
+- May's revenue drop and zero revenue in June present opportunities for improvement. Targeted marketing campaigns, promotions, or operational enhancements may be explored to address and rectify these issues.
+- Design targeted marketing campaigns or promotions to sustain positive growth during peak months and use data-driven insights to tailor strategies based on customer behavior and preferences.
+- Identify and leverage successful strategies implemented during high-growth months (e.g., December and April). Incorporate these strategies into marketing, promotions, and inventory management for other periods.
+- Foster collaboration between marketing, sales, operations, and finance teams. Cross-functional communication ensures alignment in strategies and a unified approach to revenue optimization
+
+**2. Best and Worst Selling Product** 
+
+Best Selling Product
+- Organize promotional events or tasting sessions featuring these top-selling products. Events can create buzz, attract new customers, and provide opportunities for direct engagement.
+- Introduce a customer loyalty program that rewards frequent purchasers of these top-revenue products. Loyalty programs can enhance customer retention and foster a sense of appreciation.
+- Invest in employee training to ensure staff members are well-informed about product features, benefits, and recommendations. Knowledgeable staff can enhance the customer shopping experience.
+- Engage with customers who purchase Camembert Pierrot to understand their preferences. Use this insight to tailor marketing strategies, and consider introducing new variations or packaging to keep the product fresh and appealing.
+
+**Worst Selling Products**
+
+- Review the positioning of these bottom products in the market. Consider adjustments to product positioning, messaging, or packaging to better align with customer expectations and market trends.
+- Explore collaborative marketing efforts with other products. Partnering with complementary items in promotions or marketing campaigns can create synergies and attract a broader audience.
+- Actively seek and integrate customer feedback for these bottom products. Understanding customer preferences and addressing any concerns can guide product improvements and marketing strategies.
+- Consider cross-promotions that feature these bottom-selling products alongside more popular items. Bundles or package deals can encourage customers to explore a variety of products, potentially boosting sales.
+
+**3. Identify key customers**
+- Adopt a long-term relationship focus with key customers. Invest in strategies that contribute to sustained loyalty, repeat business, and positive word-of-mouth.
+- Schedule regular business reviews with key customers to discuss performance, identify challenges, and explore collaborative solutions. This proactive approach strengthens partnerships and ensures alignment with customer expectations.
+- Conduct customer satisfaction surveys with key customers. Gather feedback on their experience, preferences, and areas for improvement to enhance overall satisfaction
+
+**4. Shipping costs consistent across providers**
+
+- Conduct a cost-benefit analysis to determine the value derived from each provider's shipping services. Consider factors such as delivery speed, reliability, and overall customer satisfaction.
+- Evaluate the service levels provided by each shipping provider. Higher costs from United Package might be justified if they offer premium services that align with business needs.
+- Explore negotiation opportunities with providers, especially if there is a significant shipping volume. Negotiating better terms can lead to cost savings without compromising service quality.
+- Assess how the shipping costs impact customer expectations. Ensure that the chosen provider aligns with customer preferences and doesn't negatively affect the overall customer experience.
 
 
+## Conclusion
 
-
-
-
-
-
-
+The analysis of Northwind Traders' sales and order data provides valuable insights into various aspects of the business. Northwind Traders can capitalize on the insights gained from this analysis to enhance operational efficiency, boost sales, and improve overall customer satisfaction. Regular monitoring, strategic planning, and adaptability will be key to the sustained success of the business.
 
 
 
