@@ -1,5 +1,5 @@
 # NORTHWIND TRADERS SALES ANALYSIS
-This Power BI project involves examining sales and order data for Northwind Traders, a gourmet food supplier, simplifying complex information to facilitate strategic decision-making.
+A Power BI project that involves examining sales and order data for Northwind Traders, a gourmet food supplier, simplifying complex information to facilitate strategic decision-making.
 
 ## Project Overview
 This project aims to provide Northwind Traders, a fictitious gourmet food supplier with actionable insights, derived from the analysis of sales and order data using Power BI. By understanding historical sales trends, product performance, key customer relationships, and shipping cost consistency, the company can make informed decisions to optimize its business strategies, improve operational efficiency, and enhance overall performance in the gourmet food supply market. 
@@ -125,6 +125,75 @@ Data profiling in Power BI helps to examining and analyzing the characteristics 
 |Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
 |----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
 |Customer ID|Text|91|91|100|0|0|ALFKI|WOLZA|
+|Company Name|Text|91|91|100|0|0|Alfreds Futterkiste|Wolski Zajazd|
+|Contact Name|Test|91|91|100|0|0|Alejandra Camino|Zbyszek Piestrzeniewicz|
+|Contact Title|Text|12|2|100|0|0|Accounting Manager|Sales Representative|
+|Country|Text|23|3|100|0|0|Argentina|Venezuela|
+
+**3. Data Quality Checks**
+
+**Missing Values:**
+- Customer ID: 0
+- Company Name: 0
+- Contact Name: 0
+- Contact Title: 0
+- Country: 0
+- Duplicates: This table has no duplicate value
+
+**Data Profile on Key Column on Employee Table**
+![](Employee_Table.png)
+
+**1. Basic Information**
+
+- Table Name: Employee Table
+- Number of Rows: Nine
+- Number of Key Columns: Two
+
+**2. Column Profile**
+
+|Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
+|----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+|Employee ID|Whole Number|9|9|100|0|0|1|9|
+|Employee Name|Text|9|9|100|0|0|Andrew Fuller|Steven Buchanan|
+
+**3. Data Quality Checks**
+
+**Missing Values:**
+- Employee ID: 0
+- Employee Name: 0
+- Duplicates: This table has no duplicate value
+
+**Data Profile on Key Column on Shippers Table**
+
+![](Shipped_Table.png)
+
+**1. Basic Information** 
+
+- Table Name: Shippers Table
+- Number of Rows: Three
+- Number of Key Columns: Two
+  
+**2. Column Profile**
+
+|Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
+|----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
