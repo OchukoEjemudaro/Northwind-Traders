@@ -457,7 +457,7 @@ After the initial analysis, I took a closer look at how shipping costs change ov
 - Speedy Express consistently demonstrates competitive shipping costs, making it a cost-efficient option for several months.
 - United Package shows varying costs, with significant spikes in months like February and April and its impact on overall shipping expenses should be carefully assessed. Consider negotiating terms or exploring alternative providers for potential cost savings.
 
-##Recommendation
+## Recommendation
 
 **1.	Sales Trends**
 
