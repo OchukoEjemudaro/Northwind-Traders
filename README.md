@@ -321,8 +321,11 @@ In Power BI, a comprehensive approach was taken to identify significant sales tr
 
 _DAX code for calculating Total Sales_
 
+```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
+This measure was then utilized in conjunction with visualization tool, line chart.
 
+Line chart graphically represent and analyze the evolving patterns and fluctuations in sales data, thereby providing a clearer and more insightful understanding of the temporal dynamics within the dataset.
 
 
 
