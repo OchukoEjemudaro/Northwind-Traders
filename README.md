@@ -488,7 +488,7 @@ Best Selling Product
 - Schedule regular business reviews with key customers to discuss performance, identify challenges, and explore collaborative solutions. This proactive approach strengthens partnerships and ensures alignment with customer expectations.
 - Conduct customer satisfaction surveys with key customers. Gather feedback on their experience, preferences, and areas for improvement to enhance overall satisfaction
 
-**4. Shipping costs consistent across providers**
+**4. Shipping costs consistency across providers**
 
 - Conduct a cost-benefit analysis to determine the value derived from each provider's shipping services. Consider factors such as delivery speed, reliability, and overall customer satisfaction.
 - Evaluate the service levels provided by each shipping provider. Higher costs from United Package might be justified if they offer premium services that align with business needs.
