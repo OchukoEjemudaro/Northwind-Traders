@@ -176,12 +176,150 @@ Data profiling in Power BI helps to examining and analyzing the characteristics 
 
 |Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
 |----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+|Shipper ID|Whole Number|3|3|100|0|0|1|3|
+|Company Name|Text|3|3|100|0|0|Company Name|United Package|
 
+**3. Data Quality Checks**
 
+**Missing Values:**
 
+- Shipper ID: 0
+- Company Name: 0
+- Duplicates: This table has no duplicate value
 
+**Data Profile on Key Column on Product Table**
+![](Product_Table.png)
 
+**1. Basic Information**
 
+- Table Name: Product Table
+- Number of Rows: Seventy-Seven
+- Number of Key Columns: Four
+
+**2. Column Profile**
+
+|Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
+|----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+|Product ID|Whole Number|77|77|100|0|0|1|77|
+|Product Name|Text|77|77|100|0|0|Zaanse koeken|Alice Mutton|
+|Unit Price|Decimal Number|62|52|100|0|0|2.5|263.5|
+|Category ID|Whole Number|8|0|100|0|0|1|8|
+
+**3. Data Quality Checks**
+
+**Missing Values:**
+
+- Product ID: 0
+- Product Name: 0
+- Unit Price: 0
+- Category ID: 0
+- Duplicates: This table has no duplicate value
+
+**Data Profile on Key Column on Order Table**
+![](Order_Table.png)
+
+**1. Basic Information**
+
+- Table Name: Order Table
+- Number of Rows: Eight Hundred and Thirty
+- Number of Key Columns: Seven
+
+**2. Column Profile**
+
+|Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
+|----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+|Order ID|Whole Number|830|830|100|0|0|10248|11077|
+|Customer ID|Text|89|77|100|0|0|ALFKI|WOLZA|
+|Employee ID|Whole Number|9|0|100|0|0|1|9|
+|Order Date|Date|480|226|100|0|0|04-Jul-13|08-Aug-14|
+|Shipped Date|Date|388|157|97|0|3|10-Jul-13|06-May-15|
+|Shipper ID|Whole Number|3|0|100|0|0|1|3|
+|Freight|Decimal Number|799|768|100|0|0|0.02|1007.64
+
+**3. Data Quality Checks**
+
+**Missing Values:**
+- Order ID: 0
+- Customer ID: 0
+- Employee ID: 0
+- Order Date: 0
+- Shipped Date: 21 (This indicate the orders made that are not yet shipped)
+- Shipper ID: 0
+- Freight: 0
+- Duplicates: This table has no duplicate value
+
+**Data Profile on Key Column on Order Detail Table**
+![](Order_Detail_Table.png)
+
+**1. Basic Information**
+
+- Table Name: Order Details Table
+- Number of Rows: Two Thousand, One Hundred and Fifty-five
+- Number of Key Columns: Five
+
+**2. Column Profile**
+
+|Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
+|----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+|Order ID|Whole Number|830|137|100|0|0|10248|11077|
+|Product ID|Whole Number|77|0|100|0|0|1|77|
+|Unit Price|Decimal Number|116|2|100|0|0|2|263.5|
+|Quantity|Whole Number|55|6|100|0|0|1|130|
+|Discount|Decimal Number|11|3|100|0|0|0|0.25|
+
+**3. Data Quality Checks**
+
+**Missing Values:**
+
+- Order ID: 0
+- Product ID: 0
+- Unit Price: 0
+- Quantity: 0
+- Discount: 0
+- Duplicates: This table has no duplicate value
+
+## Data Cleaning and Processes.
+
+In Power BI, data cleaning is performed using the Power Query Editor, a powerful tool that helps to shape and manipulate data before it gets loaded into the Power BI data model. Data cleaning helps to achieve high data integrity, data quality, maintain data consistency, and accuracy. 
+
+Based on the insight generated from data profiling, dataset for this analysis is well-structured, consistent, and free from significant issues that could hinder analysis or interpretation. The data follows a standardized format and adheres to consistent naming conventions. All necessary data fields are present and populated, the data values are accurate, data types are appropriately assigned to each column, and has no duplicate records. Therefore, no further cleaning is required.
+
+The following process was carried out during data processes.
+
+- Added a new table
+
+Northwind Traders Food Supplier runs a fiscal year that starts on July 2013 and end 12 months later. Therefore, adding a calendar table is important in this analysis. A calendar table is a table with unique date value, often referred to as a date dimension or time table. 
+
+![](Calendar_Table.png)
+
+This table was marked as date table. Marking a calendar table as a date table in Power BI enhance time-based calculations, navigation, and interactions within Power BI reports. When a calendar table is marked as date table, it’s like telling Power BI that the table contains date-related information, allowing the system to optimize certain functionalities such as Time Intelligence Functions. Marking a calendar table enables the use of time intelligence functions in DAX (Data Analysis Expressions). Functions like TOTALYTD, TOTALQTD, TOTALMTD, and others work more effectively when applied to a designated date table. These functions help with year-to-date, quarter-to-date, and month-to-date calculations.
+
+Calendar table contain nine columns which are Date, Month Name, Month Number, Quarter, Year, Fiscal Month Number, Fiscal Month Name, Fiscal Year, and Fiscal Quarter. Incorporating a calendar table into Power BI model helps to create a custom fiscal calendar, aligning with the organization's financial reporting periods. It helps to perform time intelligence functions that work seamlessly with a well-structured calendar table. These functions also help to perform various time-based calculations, such as year-to-date and month-to-month comparisons. A calendar table also help to create a date hierarchy, providing a natural and intuitive way to drill down into data. Users can easily navigate from year to month, enhancing the overall user experience.
+
+## Data Modelling
+
+Data modeling in Power BI involves structuring and organizing data to create meaningful relationships between different tables. A well-designed data model is essential for building accurate and insightful reports
+![](Data_Model.png)
+
+Established an active and inactive relationships between tables using common fields (keys), examined the relationships diagram to ensure that relationships between tables are correctly defined and accurately represents the connections between tables. An active relationship is the default relationship between tables that Power BI uses for filtering and calculations. When relationship is being created between two tables, Power BI assumes it's an active relationship unless it has been specified otherwise. Active relationships are used for most calculations and visualizations. An inactive relationship is an additional relationship between tables that is not used by default for filtering or calculations. Inactive relationships helped to have multiple relationships between tables without causing conflicts. Inactive relationships are useful to create more complex models, such as scenarios involving different date relationships. It helps to analysis data base on different perspectives. In this analysis, established Inactive relationship between Calendar table (Date Column) and Order table (Shipped Date Column). This helped to use different date relationships in different contexts. When creating measures or calculations, USERELATIONSHIP function was used to explicitly reference the inactive relationship. 
+
+Reviewed cardinality (e.g., one-to-many) and cross-filtering settings for each relationship. Cardinality defined the nature of relationship that exist between tables, it explains how one table relates to the other. This helped to ensure accurate and meaningful results in reports. Cross-filtering direction refers to the direction in which filter flows between two related tables. Properly set cross-filter direction for creating effective relationships data model and ensured that reports accurately reflect the intended relationships between tables.
+
+## Data Analysis and Insight
+
+The objective of this analysis is to understand sales trends, identify best and worst selling products, recognize key customers, and assess shipping cost consistency by analyzing the sales and order data of Northwind Traders. 
+
+**NOTE:** In the course of this analysis, encompassing fiscal years 2014 and 2015, the current set of results reflects the specific outcomes derived when the slicer was configured to the fiscal year 2015, providing a focused view on the corresponding data and insights within that particular timeframe.
+
+**This analysis provides answers to the following questions.**
+
+**1. Are there noticeable sales trend in overtime?**
+
+This refers to the examination of sales and order data to identify patterns, tendencies, or recurring behaviors in the context of time. It involves analyzing how sales performance changes and evolves over a specific period. To identify noticeable sales trends over time, typically performed time series analysis on the sales and order data. This type of analysis is valuable for understanding patterns, trends, and behaviors within the data over time.
+
+In Power BI, a comprehensive approach was taken to identify significant sales trends over time by creating a measure that calculates the total sales. 
+
+_DAX code for calculating Total Sales_
 
 
 
