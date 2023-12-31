@@ -429,6 +429,45 @@ USERELATIONSHIP function in this measure was used to switch an inactive relation
 The "Shipped Date" column in the Order table has some entries with null values. These null values represent orders that were placed but not yet shipped. As a result, these entries are intended to be excluded or filtered out from the analysis. Therefore, ```“Tbl_Order[Shipped Date]<> BLANK()”``` was use within this measure to filter the null values out from the analysis.
 
 This measure was then utilized in conjunction with visualization tool, column chart to display total shipping cost for each provider.
+![](Shipping_Costs.png)
+
+- From the analysis, United Package incurs the highest total shipping cost among the three providers. The higher cost may be attributed to various factors such as service levels, shipping distances, or additional services offered.
+- Federal Shipping has a moderate total shipping cost compared to the other providers. The cost falls in the middle range, suggesting a competitive position. 
+- Speedy Express has the lowest total shipping cost among the three providers. While offering cost advantages, it's essential to ensure that the lower cost doesn't compromise service quality or delivery speed.
+
+From this analysis, there is a clear variation in shipping costs across providers, with United Package incurring the highest cost, followed by Federal Shipping and Speedy Express. The inconsistency in shipping costs suggests that each provider may have different pricing structures, service levels, or operational efficiencies affecting their charges.
+
+After the initial analysis, I took a closer look at how shipping costs change over time. This detailed exploration helped me understand the performance trends in shipping costs among different providers. It's like looking at a timeline to see patterns and changes in shipping expenses. This kind of analysis is valuable for spotting trends and behaviors in the data over a specific period.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
