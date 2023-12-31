@@ -327,6 +327,33 @@ This measure was then utilized in conjunction with visualization tool, line char
 
 Line chart graphically represent and analyze the evolving patterns and fluctuations in sales data, thereby providing a clearer and more insightful understanding of the temporal dynamics within the dataset.
 
+![](Sales_Trends.png)
+
+- From this analysis, there is a general increasing trend in revenue from July to March, indicating a positive sales trajectory and strong performance during this period. This trend suggests successful sales strategies, customer engagement, or market demand during these months.
+- May stands out with a significant drop in revenue. There may be external factors affecting sales in May, such as seasonal changes, economic conditions, or specific market events. 
+- June reports zero revenue, indicating a potential issue or anomaly. Operational challenges, data entry error or system issues may be contributing to the absence of sales data in June.
+
+After the initial analysis, I dug deeper to figure out which months had higher or lower revenue compared to the previous month. This detailed exploration helped to understand the patterns in revenue changes over time. The results of this analysis are neatly shown in a waterfall chart, making it easy to see and grasp the factors influencing revenue fluctuations from month to month.
+
+Waterfall chart graphically represent and analyze sales data to show percentage increase in sales compared to the previous month. A waterfall chart is beneficial for visualizing the month-to-month changes in revenue in a sequential manner. Each column in the waterfall chart represents a month, and the vertical movement between columns represents the percentage change in revenue. The chart effectively highlights positive and negative contributions to revenue changes. Positive values would be represented by columns going upwards, while negative values would be represented by columns going downwards. 
+
+A comprehensive approach was taken to create a measure that calculate percentage increase in sales compared to the previous month.
+
+1. _DAX code for calculating Total Sales_
+
+```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
+
+2. _DAX code for calculating Previous Month Sales_
+
+```Previous Month Sales = CALCULATE ([Total Sales], PREVIOUSMONTH('Calendar'[Date]))```
+
+3. _DAX code for calculating % Increase in Sales Compared to Previous Month_
+
+```%MOM Sales = DIVIDE ([Total Sales] - [Previous Month sales], [Previous Month sales],0)```
+
+%MOM measure was then utilized in conjunction with visualization tool, waterfall chart.
+
+
 
 
 
