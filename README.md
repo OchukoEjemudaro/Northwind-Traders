@@ -62,6 +62,7 @@ Shipper table contains information about shippers. It has three (3) rows, and tw
 In Power BI, connecting to a CSV file involves specifying the location of the CSV file and defining the data import settings. Here are the steps taken in data connection in Power BI. 
 
 **1. Open Power BI Desktop**
+
 - Launched Power BI Desktop on computer
 ![](Open_Power_BI.png)
 
@@ -69,24 +70,38 @@ In Power BI, connecting to a CSV file involves specifying the location of the CS
 
 - Clicked on the "Home" tab in the Power BI Desktop.
 - Selected "Get Data" to initiate the data import process.
+![](Get_Data.png)
 
+**3. Choose Text/CSV and Specify the File Location**
 
+- In the "Get Data" window, selected "Text/CSV" as the data source.
+- Navigated to the location where the CSV file is stored.
+- Selected the CSV file I want to import and clicked "Open."
+![](Choose_Text.png)
 
+**4. Preview and Transform:**
+- Power BI displayed a preview of the data from the CSV file.
+- Reviewed the data to ensure it is displayed correctly.
+![](Preview.png)
 
+## Data Profiling
 
+Data profiling in Power BI helps to examining and analyzing the characteristics and quality of data to gain insights into its structure, patterns, potential issues, and identify outliers. It helps to make informed decision on data cleaning and transformation. Power BI provides several tools and features that helps to profile data effectively. These are column quality, column distribution and column profile.
 
+- **Data Profile on Key Column on Category Table**
+![](Category_Table.png)
 
+**1. Basic Information**
+- Table Name: Category Table
+- Number of Rows: Eight
+- Number of Key Columns: Two 
 
+**2. Column Profile**
 
-
-
-
-
-
-
-
-
-
+|Column Name|Data Type|Distinct Value|Unique Value|% Valid Values|% Error Values|% Empty Values|Min|Max|
+|----------------|---------|--------------|------------|-------------|------------|-------------|---|---|
+|Category ID|Whole Number|8|8|100|0|0|1|8|
+|Category Name|Text|8|8|100|0|0|Beverages|Seafood|
 
 
 
