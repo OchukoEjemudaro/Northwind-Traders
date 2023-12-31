@@ -1,5 +1,5 @@
 # NORTHWIND TRADERS SALES ANALYSIS
-A Power BI project that involves examining sales and order data for Northwind Traders, a gourmet food supplier, simplifying complex information to facilitate strategic decision-making.
+A Power BI project that examining sales and order data for Northwind Traders, a gourmet food supplier, simplifying complex information to facilitate strategic decision-making.
 
 ## Table of Content
 - [Project Overview](https://github.com/OchukoEjemudaro/Northwind-Traders#northwind-traders-sales-analysis)
