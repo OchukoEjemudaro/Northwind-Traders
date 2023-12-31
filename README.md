@@ -25,7 +25,7 @@ The project will provide Northwind Traders with the tools and knowledge needed f
 This project covers sales data from July 4, 2013 to May 6, 2015, focusing on customer relationship, product performance, sales trends, and shipping cost consistency. 
 
 ## Business Objective
-The objective for this analysis is to identify if there are any noticeable sales trends over time, to find out the best and the worst selling product by identifying high performing and under perming product, identifying key customer, and to find out if shipping cost are consistent across providers. 
+The objective for this analysis is to identify if there are any noticeable sales trends over time, to find out the best and the worst selling product by identifying high performing and underperforming product, identifying key customer, and to find out if shipping cost are consistent across providers. 
 
 ## Document Purpose
 This documentation serves as a guide for project stakeholders, providing insights into the project's objectives, data sources, data analysis, visualizations, and any other relevant information. 
@@ -56,7 +56,7 @@ Here are key stakeholders who could make use of this analysis and benefit from i
 
 ## Data Source
 
-The project utilizes a dataset containing information on sales and order. The dataset used for this analysis was downloaded from Maven Analytics website where datasets are available for practice purpose. The dataset is a CSV file and it consist seven main tables which are category table, customer table, employees table, order table, order details table, products tables and shippers table
+The project utilizes a dataset containing information on sales and order. The dataset used for this analysis was downloaded from [Maven Analytics](https://www.mavenanalytics.io/data-playground) website where datasets are available for practice purpose. The dataset is a CSV file and it consist seven main tables which are category table, customer table, employees table, order table, order details table, products tables and shippers table
 
 Category table contain information about product category. It has eight rows, and three columns which are Category ID, Category Name, and Description. Category Id is the unique identifier for each product category, Category Name is the name of the category while Description column describe the category and its products.
 
