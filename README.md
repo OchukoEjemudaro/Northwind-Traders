@@ -6,6 +6,7 @@ A Power BI project that examine sales and order data for Northwind Traders, a go
 - [Project Scope](https://github.com/OchukoEjemudaro/Northwind-Traders#project-scope)
 - [Business Objective](https://github.com/OchukoEjemudaro/Northwind-Traders#business-objective)
 - [Document Purpose](https://github.com/OchukoEjemudaro/Northwind-Traders#document-purpose)
+- [Use Case](https://github.com/OchukoEjemudaro/Northwind-Traders?tab=readme-ov-file#use-case)
 - [Skill Demostrated](https://github.com/OchukoEjemudaro/Northwind-Traders#skills-demostrated)
 - [Data Source](https://github.com/OchukoEjemudaro/Northwind-Traders#data-source)
 - [Data Connection Detail](https://github.com/OchukoEjemudaro/Northwind-Traders#data-connection-details)
