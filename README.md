@@ -411,9 +411,9 @@ key customers are customer who significantly contribute to the success and growt
 
 To identify key customers by revenue generated in Power BI, a measure that calculate the total revenue made on each customer was created and then used bar chart to display the results. 
 
-A comprehensive approach was taken to create a measure that calculate total sales
+A comprehensive approach was taken to create a measure that calculate total Revenue
 
-_DAX code for calculating Total Sales_
+_DAX code for calculating Total Revenue_
 
 ```Total Revenue = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
