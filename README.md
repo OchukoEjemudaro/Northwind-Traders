@@ -341,7 +341,7 @@ _DAX code for calculating Total Revenue_
 This measure was then utilized in conjunction with visualization tool, line chart.
 
 Line chart graphically represent and analyze the evolving patterns and fluctuations in sales data, thereby providing a clearer and more insightful understanding of the temporal dynamics within the dataset.
-![](Revenue_Trends.png)
+![](Sales_Trends.png)
 
 - From this analysis, there is a general increasing trend in revenue from July to March, indicating a positive sales trajectory and strong performance during this period. This trend suggests successful sales strategies, customer engagement, or market demand during these months.
 - May stands out with a significant drop in revenue. There may be external factors affecting sales in May, such as seasonal changes, economic conditions, or specific market events. 
@@ -366,7 +366,7 @@ A comprehensive approach was taken to create a measure that calculate percentage
 ```%MOM Sales = DIVIDE ([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue],0)```
 
 %MOM measure was then utilized in conjunction with visualization tool, waterfall chart.
-![](Monthly_Trends.png)
+![](MOM_Rev.png)
 
 - From this analysis, July, September, October, December, January, February, March, and April exhibit positive revenue growth compared to the previous month with December and April leading in percentage increases.
 - August, November, May, and June show a decline in revenue compared to the previous month.
@@ -386,7 +386,7 @@ _DAX code for calculating Total Revenue_
 This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 best selling product and worst 5 selling product by revenue.
 
 **Best Selling Product**
-![](Top_5_Product.png)
+![](Top_5_Prodcut.png)
 
 - From this analysis, Côte de Blaye stands out as the top revenue generator despite a lower unit sales volume (305 units). This product commands a high price, contributing significantly to revenue. The lower unit sales suggest a higher value perception among customers.
 - Thüringer Rostbratwurst follows closely in revenue, with a higher unit sales volume (514 units). This product combines strong sales volume with a competitive price, indicating a popular and reasonably priced item among customers.
@@ -397,7 +397,7 @@ This measure was then utilized in conjunction with visualization tool, bar chart
 Understanding the interplay between unit sales and revenue for each product allows Northwind Traders to tailor strategies for optimal performance and sustained growth in the gourmet food market.
 
 **Worst Selling Product**
-![](Bottom_5_Products.png)
+![](Bottom_5_Product.png)
 
 - From this analysis, Genen Shouyu has revenue of $1163 with 75 units sold. This product may have limited market appeal or faces challenges in commanding higher prices. 
 - Longlife Tofu follows with revenue of $950 and 95 units sold. While unit sales are slightly higher than Genen Shouyu, the revenue remains low. Consider exploring opportunities to enhance the product's perceived value, such as through marketing campaigns emphasizing its unique qualities or versatility.
@@ -418,7 +418,8 @@ _DAX code for calculating Total Revenue_
 ```Total Revenue = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
 This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 customers by revenue.
-![](Top_5_Customers.png)
+
+![](Top_5_Customer.png)
 
 - From this analysis, Save-A-Lot Markets emerges as the top key customer, generating $87,174 in revenue. Save-A-Lot Markets' substantial contribution to revenue indicates a strong and consistent business relationship.
 - Ernst Handel follows closely, contributing $75,488 in revenue. Ernst Handel's significant revenue suggests a robust partnership. 
@@ -445,7 +446,7 @@ USERELATIONSHIP function in this measure was used to switch an inactive relation
 The "Shipped Date" column in the Order table has some entries with null values. These null values represent orders that were placed but not yet shipped. As a result, these entries are intended to be excluded or filtered out from the analysis. Therefore, ```“Tbl_Order[Shipped Date]<> BLANK()”``` was use within this measure to filter the null values out from the analysis.
 
 This measure was then utilized in conjunction with visualization tool, column chart to display total shipping cost for each provider.
-![](Shipping_Cost_Provider.png)
+![](Shipping_Provider.png)
 
 - From the analysis, United Package incurs the highest total shipping cost among the three providers. The higher cost may be attributed to various factors such as service levels, shipping distances, or additional services offered.
 - Federal Shipping has a moderate total shipping cost compared to the other providers. The cost falls in the middle range, suggesting a competitive position. 
@@ -454,7 +455,7 @@ This measure was then utilized in conjunction with visualization tool, column ch
 From this analysis, there is a clear variation in shipping costs across providers, with United Package incurring the highest cost, followed by Federal Shipping and Speedy Express. The inconsistency in shipping costs suggests that each provider may have different pricing structures, service levels, or operational efficiencies affecting their charges.
 
 After the initial analysis, I took a closer look at how shipping costs change over time. This detailed exploration helped me understand the performance trends in shipping costs among different providers. It's like looking at a timeline to see patterns and changes in shipping expenses. This kind of analysis is valuable for spotting trends and behaviors in the data over a specific period.
-![](Shipping_Cost_Trend.png)
+![](Shipping_Trend.png)
 
 - From this analysis, Federal Shipping shows variations, with higher costs in peak months like August, October and April. Understanding these seasonal trends can help in planning and optimizing logistics.
 - Speedy Express consistently demonstrates competitive shipping costs, making it a cost-efficient option for several months.
