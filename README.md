@@ -332,11 +332,11 @@ The objective of this analysis is to understand sales trends, identify best and 
 
 This refers to the examination of sales and order data to identify patterns, tendencies, or recurring behaviors in the context of time. It involves analyzing how sales performance changes and evolves over a specific period. To identify noticeable sales trends over time, typically performed time series analysis on the sales and order data. This type of analysis is valuable for understanding patterns, trends, and behaviors within the data over time.
 
-In Power BI, a comprehensive approach was taken to identify significant sales trends over time by creating a measure that calculates the total sales. 
+In Power BI, a comprehensive approach was taken to identify significant sales trends over time by creating a measure that calculates the total revenue. 
 
-_DAX code for calculating Total Sales_
+_DAX code for calculating Total Revenue_
 
-```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
+```Total Revenue = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
 This measure was then utilized in conjunction with visualization tool, line chart.
 
@@ -349,21 +349,21 @@ Line chart graphically represent and analyze the evolving patterns and fluctuati
 
 After the initial analysis, I dug deeper to figure out which months had higher or lower revenue compared to the previous month. This detailed exploration helped to understand the patterns in revenue changes over time. The results of this analysis are neatly shown in a waterfall chart, making it easy to see and grasp the factors influencing revenue fluctuations from month to month.
 
-Waterfall chart graphically represent and analyze sales data to show percentage increase in sales compared to the previous month. A waterfall chart is beneficial for visualizing the month-to-month changes in revenue in a sequential manner. Each column in the waterfall chart represents a month, and the vertical movement between columns represents the percentage change in revenue. The chart effectively highlights positive and negative contributions to revenue changes. Positive values would be represented by columns going upwards, while negative values would be represented by columns going downwards. 
+Waterfall chart graphically represent and analyze sales data to show percentage increase in revenue compared to the previous month. A waterfall chart is beneficial for visualizing the month-to-month changes in revenue in a sequential manner. Each column in the waterfall chart represents a month, and the vertical movement between columns represents the percentage change in revenue. The chart effectively highlights positive and negative contributions to revenue changes. Positive values would be represented by columns going upwards, while negative values would be represented by columns going downwards. 
 
 A comprehensive approach was taken to create a measure that calculate percentage increase in sales compared to the previous month.
 
-1. _DAX code for calculating Total Sales_
+1. _DAX code for calculating Total Revenue_
 
-```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
+```Total Revenue = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
-2. _DAX code for calculating Previous Month Sales_
+2. _DAX code for calculating Previous Month Revenue_
 
-```Previous Month Sales = CALCULATE ([Total Sales], PREVIOUSMONTH('Calendar'[Date]))```
+```Previous Month Revenue = CALCULATE ([Total Revenue], PREVIOUSMONTH('Calendar'[Date]))```
 
 3. _DAX code for calculating % Increase in Sales Compared to Previous Month_
 
-```%MOM Sales = DIVIDE ([Total Sales] - [Previous Month sales], [Previous Month sales],0)```
+```%MOM Sales = DIVIDE ([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue],0)```
 
 %MOM measure was then utilized in conjunction with visualization tool, waterfall chart.
 ![](Monthly_Trends.png)
@@ -379,9 +379,9 @@ To identify the best and worst selling products in Power BI, a measure that calc
 
 A comprehensive approach was taken to create a measure that calculate total sales
 
-_DAX code for calculating Total Sales_
+_DAX code for calculating Total Revenue_
 
-```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
+```Total Revenue = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
 This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 best selling product and worst 5 selling product by revenue.
 
@@ -415,7 +415,7 @@ A comprehensive approach was taken to create a measure that calculate total sale
 
 _DAX code for calculating Total Sales_
 
-```Total Sales = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
+```Total Revenue = SUMX (Tbl_Order_Details, Tbl_Order_Details[Quantity]* Tbl_Order_Details[UnitPrice])```
 
 This measure was then utilized in conjunction with visualization tool, bar chart then filtered in the filter pane to only display top 5 customers by revenue.
 ![](Top_5_Customers.png)
