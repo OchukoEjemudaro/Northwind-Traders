@@ -351,7 +351,7 @@ After the initial analysis, I dug deeper to figure out which months had higher o
 
 Waterfall chart graphically represent and analyze sales data to show percentage increase in revenue compared to the previous month. A waterfall chart is beneficial for visualizing the month-to-month changes in revenue in a sequential manner. Each column in the waterfall chart represents a month, and the vertical movement between columns represents the percentage change in revenue. The chart effectively highlights positive and negative contributions to revenue changes. Positive values would be represented by columns going upwards, while negative values would be represented by columns going downwards. 
 
-A comprehensive approach was taken to create a measure that calculate percentage increase in sales compared to the previous month.
+A comprehensive approach was taken to create a measure that calculate percentage increase in revenue compared to the previous month.
 
 1. _DAX code for calculating Total Revenue_
 
@@ -361,7 +361,7 @@ A comprehensive approach was taken to create a measure that calculate percentage
 
 ```Previous Month Revenue = CALCULATE ([Total Revenue], PREVIOUSMONTH('Calendar'[Date]))```
 
-3. _DAX code for calculating % Increase in Sales Compared to Previous Month_
+3. _DAX code for calculating % Increase in Revenue Compared to Previous Month_
 
 ```%MOM Sales = DIVIDE ([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue],0)```
 
@@ -377,7 +377,7 @@ Analyzing the sales and order data for Northwind Traders, it's essential to iden
 
 To identify the best and worst selling products in Power BI, a measure that calculate the revenue made on each product was created and then used bar chart to display the results. 
 
-A comprehensive approach was taken to create a measure that calculate total sales
+A comprehensive approach was taken to create a measure that calculate total Revenue
 
 _DAX code for calculating Total Revenue_
 
