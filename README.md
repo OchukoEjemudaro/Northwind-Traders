@@ -363,7 +363,7 @@ A comprehensive approach was taken to create a measure that calculate percentage
 
 3. _DAX code for calculating % Increase in Revenue Compared to Previous Month_
 
-```%MOM Sales = DIVIDE ([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue],0)```
+```%MOM Revenue = DIVIDE ([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue],0)```
 
 %MOM measure was then utilized in conjunction with visualization tool, waterfall chart.
 ![](MOM_Rev.png)
