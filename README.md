@@ -504,7 +504,7 @@ The analysis of Northwind Traders' sales and order data provides valuable insigh
 
 Thank You For Reading
 
-You van also interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiMDAwZTU2YjQtNTdmYy00Mzk4LTgyYmUtZGY5YjE3ZGM3Njg0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+You can also interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiMDAwZTU2YjQtNTdmYy00Mzk4LTgyYmUtZGY5YjE3ZGM3Njg0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ---
 
