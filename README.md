@@ -45,7 +45,7 @@ Here are key stakeholders who could make use of this analysis and benefit from i
 
 **3. Customer Service and Sales Teams:**
 -	Use of Analysis: Customer service and sales teams can benefit from improved communication channels, real-time order tracking, and a better understanding of customer preferences and issues.
--	Benefits: Enhanced customer satisfaction, increased sales, and improved customer retention
+-	Benefits: Enhanced customer satisfaction, increased sales, and improved customer retention.
 
 ## Skills Demostrated
 - Data Connection in Power BI
