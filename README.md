@@ -511,7 +511,7 @@ You can also interact with the report [Here](https://app.powerbi.com/view?r=eyJr
 
 I’m interested in a Data Analyst role in a reputable organization where I can showcase my skills, take more responsibilities, continue to learn, an organization that I can grow with, where my work will be highly beneficial to the organization.
 
-You can reach me on ochukoejemudaro@gmail.com or [Twitter](https://twitter.com/iamochuks/)
+You can reach me on ochukoejemudaro@gmail.com or [Twitter](https://twitter.com/iamochuks/) or [LinkedIn](https://www.linkedin.com/in/ochukoejemudaro01)
 
 THANK YOU
 
