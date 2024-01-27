@@ -462,6 +462,14 @@ After the initial analysis, I took a closer look at how shipping costs change ov
 - Speedy Express consistently demonstrates competitive shipping costs, making it a cost-efficient option for several months.
 - United Package shows varying costs, with significant spikes in months like February and April and its impact on overall shipping expenses should be carefully assessed. Consider negotiating terms or exploring alternative providers for potential cost savings.
 
+## Data Visualization
+
+This data visualization was created using Power BI, each visual created displays information for each question in the business objective.
+
+![](https://github.com/OchukoEjemudaro/Northwind-Traders/blob/main/Dashboard.png)
+
+You can also interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiMDAwZTU2YjQtNTdmYy00Mzk4LTgyYmUtZGY5YjE3ZGM3Njg0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+
 ## Recommendation
 
 **1.	Sales Trends**
@@ -504,8 +512,6 @@ Best Selling Product
 The analysis of Northwind Traders' sales and order data provides valuable insights into various aspects of the business. Northwind Traders can capitalize on the insights gained from this analysis to enhance operational efficiency, boost sales, and improve overall customer satisfaction. Regular monitoring, strategic planning, and adaptability will be key to the sustained success of the business.
 
 Thank You For Reading
-
-You can also interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiMDAwZTU2YjQtNTdmYy00Mzk4LTgyYmUtZGY5YjE3ZGM3Njg0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ---
 
