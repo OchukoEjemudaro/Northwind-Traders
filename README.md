@@ -14,6 +14,7 @@ A Power BI project that examine sales and order data for Northwind Traders, a go
 - [Data Cleaning and Process](https://github.com/OchukoEjemudaro/Northwind-Traders#data-cleaning-and-processes)
 - [Data modelling](https://github.com/OchukoEjemudaro/Northwind-Traders#data-modelling)
 - [Data Analysis and Insight](https://github.com/OchukoEjemudaro/Northwind-Traders#data-analysis-and-insight)
+- [Data Visualization](https://github.com/OchukoEjemudaro/Northwind-Traders#data-visualization)
 - [Recommendation](https://github.com/OchukoEjemudaro/Northwind-Traders#recommendation)
 - [Conclusion](https://github.com/OchukoEjemudaro/Northwind-Traders#conclusion)
 
